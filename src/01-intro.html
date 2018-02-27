@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>01 Escopo no JS</title>
+</head>
+<body>
+  <button id="btn">Click me!</button>
+</body>
+
+<script>
+    const cities = ['São Paulo', 'Rio de Janeiro', 'Belo Horizonte'];
+
+    const love = cities
+                .filter(name => name === 'São Paulo')
+                .map(name => `I love ${name}!`);
+
+    console.log(love);
+
+    const btn = document.getElementById('btn');
+
+    btn.addEventListener('click', () => {
+      console.log(that);
+    });
+
+</script>
+</html>
